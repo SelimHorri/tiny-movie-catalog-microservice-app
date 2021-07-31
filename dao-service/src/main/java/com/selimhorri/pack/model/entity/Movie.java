@@ -1,4 +1,4 @@
-package com.selimhorri.pack.model;
+package com.selimhorri.pack.model.entity;
 
 import java.io.Serializable;
 
