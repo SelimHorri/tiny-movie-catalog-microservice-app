@@ -3,6 +3,7 @@ package com.selimhorri.pack.service;
 import java.util.List;
 
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -43,7 +44,12 @@ public class DirectorServiceImpl implements DirectorService {
 	
 	@Override
 	public Director update(Director director) {
-		return this.restTemplate.patchForObject(API_URL, director, Director.class);
+		return this.restTemplate.exchange(
+				API_URL,
+				HttpMethod.PUT,
+				new HttpEntity<Director>(director),
+				Director.class)
+			.getBody();
 	}
 	
 	@Override
