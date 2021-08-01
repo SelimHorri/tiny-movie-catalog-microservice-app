@@ -5,6 +5,9 @@ import java.time.LocalDate;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,6 +25,7 @@ public final class Director implements Serializable {
 	private String fname;
 	private String lname;
 	
+	@JsonFormat(pattern = "dd-MM-yyyy", shape = Shape.STRING)
 	@DateTimeFormat(pattern = "dd-MM-yyyy")
 	private LocalDate hiredate;
 	

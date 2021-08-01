@@ -16,6 +16,8 @@ import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
@@ -42,6 +44,7 @@ public final class Director implements Serializable {
 	
 	private String lname;
 	
+	@JsonFormat(pattern = "dd-MM-yyyy", shape = Shape.STRING)
 	@DateTimeFormat(pattern = "dd-MM-yyyy")
 	private LocalDate hiredate;
 	
