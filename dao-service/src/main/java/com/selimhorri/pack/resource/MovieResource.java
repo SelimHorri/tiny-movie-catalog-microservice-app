@@ -45,9 +45,9 @@ public class MovieResource {
 	}
 	
 	@DeleteMapping(value = {"/{movieId}"})
-	public ResponseEntity<Movie> deleteById(@PathVariable("movieId") final String movieId) {
+	public ResponseEntity<Boolean> deleteById(@PathVariable("movieId") final String movieId) {
 		this.movieService.deleteById(Integer.parseInt(movieId));
-		return new ResponseEntity<>(HttpStatus.OK);
+		return new ResponseEntity<>(true, HttpStatus.OK);
 	}
 	
 	

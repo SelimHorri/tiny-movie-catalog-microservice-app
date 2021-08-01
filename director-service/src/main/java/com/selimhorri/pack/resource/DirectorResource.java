@@ -45,9 +45,9 @@ public class DirectorResource {
 	}
 	
 	@DeleteMapping(value = {"/{directorId}"})
-	public ResponseEntity<Director> deleteById(@PathVariable("directorId") final String directorId) {
+	public ResponseEntity<Boolean> deleteById(@PathVariable("directorId") final String directorId) {
 		this.directorService.deleteById(Integer.parseInt(directorId));
-		return new ResponseEntity<>(HttpStatus.OK);
+		return new ResponseEntity<>(true, HttpStatus.OK);
 	}
 	
 	
