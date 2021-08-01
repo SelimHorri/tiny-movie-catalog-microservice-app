@@ -7,6 +7,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import com.selimhorri.pack.constant.BackendApiUrlConstant;
 import com.selimhorri.pack.model.Director;
 import com.selimhorri.pack.model.DtoCollection;
 
@@ -16,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class DirectorServiceImpl implements DirectorService {
 	
-	private static final String API_URL = "http://localhost:8081/app/dao-service";
+	private static final String API_URL = BackendApiUrlConstant.DaoServiceDevApiUrlConstant.API_URL;
 	private final RestTemplate restTemplate;
 	
 	@Override
