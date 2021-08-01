@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class DirectorServiceImpl implements DirectorService {
 	
-	private static final String API_URL = BackendApiUrlConstant.DaoServiceDevApiUrlConstant.API_URL;
+	private static final String API_URL = BackendApiUrlConstant.DaoServiceDevApiUrlConstant.API_URL + "/directors";
 	private final RestTemplate restTemplate;
 	
 	@Override
