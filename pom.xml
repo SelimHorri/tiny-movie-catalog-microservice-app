@@ -33,6 +33,7 @@
 	
 	<modules>
 		<module>discovery-server</module>
+		<module>api-gateway</module>
 		<module>dao-service</module>
 		<module>director-service</module>
 		<module>movie-service</module>
