@@ -1,4 +1,4 @@
-package com.selimhorri.pack;
+package com.selimhorri.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class MovieServiceApplication {
+public class ApiGatewayApplication {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(MovieServiceApplication.class, args);
+		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
 	
 	

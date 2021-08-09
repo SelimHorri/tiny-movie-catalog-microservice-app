@@ -18,7 +18,7 @@ import com.selimhorri.pack.service.DirectorService;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping(value = {"/directors"})
+@RequestMapping(value = {"", "/", "/directors"})
 @RequiredArgsConstructor
 public class DirectorResource {
 	
