@@ -18,7 +18,7 @@ import com.selimhorri.pack.service.MovieService;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping(value = {"/movies"})
+@RequestMapping(value = {"", "/", "/movies"})
 @RequiredArgsConstructor
 public class MovieResource {
 	
