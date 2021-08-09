@@ -8,7 +8,6 @@
 		<groupId>com.selimhorri</groupId>
 		<artifactId>tiny-movie-catalog-microservice-app</artifactId>
 		<version>1.0</version>
-		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.selimhorri</groupId>
 	<artifactId>api-gateway</artifactId>
