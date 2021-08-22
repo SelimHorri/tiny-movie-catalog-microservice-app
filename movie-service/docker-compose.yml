@@ -1,0 +1,8 @@
+version: 'latest'
+services:
+  project-tracking-system-container:
+    image: selimhorri/movie-service
+    ports:
+      - 8080:8080
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev

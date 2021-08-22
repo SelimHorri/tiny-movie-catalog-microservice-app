@@ -1,0 +1,8 @@
+version: 'latest'
+services:
+  project-tracking-system-container:
+    image: selimhorri/tiny-movie-catalog-microservice-app
+    ports:
+      - 8080:8080
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
